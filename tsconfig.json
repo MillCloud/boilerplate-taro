@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "lib",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./typings",
+      "./src/typings",
+      "global.d.ts"
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@@/*": ["./*"]
+    }
+  },
+  "include": [
+    "./**/*.js",
+    "./**/*.jsx",
+    "./**/*.ts",
+    "./**/*.tsx",
+    "./**/*.vue",
+    "./**/.*.js",
+    "./**/.*.ts"
+  ],
+  "exclude": ["node_modules", "dist", "dist_electron", "out", "unpackage"],
+  "compileOnSave": false
+}
